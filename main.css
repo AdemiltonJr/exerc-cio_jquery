@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Exibir elementos em coluna */
+    align-items: center; /* Centralizar horizontalmente */
+    background-color: #e8eef1; /* Fundo neutro */
+}
+
+.principal {
+    width: 100%;
+    max-width: 800px;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradiente moderno */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    margin-bottom: 20px; /* Espaço entre as seções */
+    margin-top: 5%;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header form h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+header form input[type="text"] {
+    width: calc(100% - 120px);
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+header form button {
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #00aaff;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header form button:hover {
+    background-color: #00aaff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container ul li:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.02);
+}
+
+.container ul li.completed {
+    text-decoration: line-through;
+    background-color: #d3f9d8;
+    color: #4caf50;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+/* Nova seção para lista de tarefas */
+.lista-tarefas {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo claro */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 800px;
+    width: 90%;
+}
+
+.lista-tarefas h2 {
+    font-size: 1.5rem;
+    color: #4facfe; /* Azul do gradiente */
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.lista-tarefas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-tarefas ul li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lista-tarefas ul li:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.02);
+}
+
+.lista-tarefas ul li.completed {
+    text-decoration: line-through;
+    background-color: #d3f9d8;
+    color: #4caf50;
+}
